@@ -9,7 +9,7 @@ export const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: SearchPageComponent },
+      { path: 'search', component: SearchPageComponent },
       { path: 'profile', component: ProfilePageComponent },
     ],
   },
