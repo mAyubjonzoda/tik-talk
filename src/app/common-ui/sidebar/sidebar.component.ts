@@ -4,8 +4,24 @@ import { Component } from '@angular/core';
   selector: 'app-sidebar',
   imports: [],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent {
-
+  menuItems = [
+    {
+      label: 'Моя страница',
+      img: '/assets/imgs/home.svg',
+      link: '#',
+    },
+    {
+      label: 'Чаты',
+      img: '/assets/imgs/chats.svg',
+      link: '#',
+    },
+    {
+      label: 'Поиск',
+      img: '/assets/imgs/search.svg',
+      link: '#',
+    },
+  ];
 }

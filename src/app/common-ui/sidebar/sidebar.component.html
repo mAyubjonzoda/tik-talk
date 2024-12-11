@@ -1,1 +1,13 @@
-<p>sidebar works!</p>
+<nav>
+  <ul class="main-menu-list">
+    @for (menuItem of menuItems; track $index) {
+    <li>
+      <button class="menu-item">
+        <img src="{{ menuItem.img }}" alt="" />
+        <span>{{ menuItem.label }}</span>
+        <a href="{{ menuItem.link }}"></a>
+      </button>
+    </li>
+    }
+  </ul>
+</nav>
