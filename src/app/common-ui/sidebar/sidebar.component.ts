@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { SidebarCardComponent } from './sidebar-card/sidebar-card.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [],
+  imports: [SidebarCardComponent, RouterLink],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
