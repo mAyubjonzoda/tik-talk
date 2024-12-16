@@ -27,7 +27,7 @@ export class LoginPageComponent {
       username === this.correctUsername &&
       password === this.correctPassword
     ) {
-      this.router.navigate(['/search']); // Переход на другую страницу
+      this.router.navigate(['page/search']); // Переход на другую страницу
     } else {
       alert('Неверный логин или пароль');
     }
